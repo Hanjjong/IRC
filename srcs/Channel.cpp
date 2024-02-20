@@ -146,6 +146,8 @@ void	Channel::announce(uintptr_t senderFd, std::string cmd, std::string params, 
 	{
 		if (flag && senderFd == it->first)
 			continue;
+		if (it->second.second == false)
+			continue;
 		Database::getInstance()->sendToClient(senderFd, it->first, cmd, " " + params, CLIENT);
 	}
 }
