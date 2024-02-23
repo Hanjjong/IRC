@@ -34,7 +34,7 @@ bool Mode::handleException()
 	Channel& curChannel = _DB->getChannel(_DB->search(_parsedCommand[1], CHANNEL));
 	if (curChannel.isMemberExists(_fd) == false || curChannel.isAdmin(_fd) == false)
 	{
-		_DB->sendToClient(_fd, _fd, "482", _parsedCommand[0] + " :You are not channel operator!!", SERVER);
+		_DB->sendToClient(_fd, _fd, "482", _parsedCommand[1] + " :You are not channel operator!!", SERVER);
 		return true;
 	}
 	return false;		
