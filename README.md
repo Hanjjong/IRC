@@ -15,7 +15,7 @@ make 명령어로 MAKEFILE 실행 후
 2. irssi 상용 클라이언트 사용
    brew install irssi\n
    ./irssi\n
-   connect -nocap $(ip) $(port) $(password)\n
+   connect -nocap $(ip) $(port) $(password) </br>
    ex) connect -nocap localhost 8080 1234
    irssi 클라이언트의 경우 명령어 작성 문법이 조금 상이 하므로 유의해주세요!
 접속 완료 되었다면 
