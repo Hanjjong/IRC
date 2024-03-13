@@ -29,6 +29,17 @@ int kevent (
 );
 
 ```
+kevent()에서 중심이 되는 데이터가 struct kevent입니다.
+```cpp
+struct kevent {
+    uintptr_t ident; // 이벤트에 대한 식별자, fd 번호
+    int16_t filter; // 이벤트에 대한 식별자, 이벤트의 종류에 해당
+    uint16_t flags; // event를 적용시키거나, event가 return 됐을 때 flag
+    uint32_t fflags; // filter에 대한 flag
+    intptr_t data; // filter에 대한 data
+    void *udata; // user data
+};
+```
 - flags
     
     어떤 액션을 취할 지 결정한다.
