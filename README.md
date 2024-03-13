@@ -68,7 +68,7 @@ Command Class : 각 명령어들의 인터페이스 역할을 하며, 클라이�
 make 명령어로 MAKEFILE 실행 후 </br>
 ./ircserv 8080(port) 1234(비밀번호) 실행</br>
 1. nc 명령어를 사용하는 방법</br>
-  nc -c $(서버 IP) $(port)</br>
+    `nc -c $(서버 IP) $(port)`</br>
   ex) nc -c 127.0.0.1 8080</br>
 2. irssi 상용 클라이언트 사용</br>
    brew install irssi</br>
