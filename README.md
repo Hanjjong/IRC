@@ -28,7 +28,7 @@ int kevent (
     const struct timespec *timeout // timeout
 );
 
-
+```
 ## 실행 방법
 make 명령어로 MAKEFILE 실행 후 </br>
 ./ircserv 8080(port) 1234(비밀번호) 실행</br>
