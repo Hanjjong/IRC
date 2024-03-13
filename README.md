@@ -29,6 +29,16 @@ int kevent (
 );
 
 ```
+- flags
+    
+    어떤 액션을 취할 지 결정한다.
+    
+    EV_ADD: 이벤트를 kqueue에 추가한다.
+    
+    EV_ENABLE: kevent()가 해당 이벤트가 발동됐을 때, 반환할 수 있도록 한다
+    
+    EV_DISABLE: kevent()가 해당 이벤트를 무시하도록 한다.
+
 ## 실행 방법
 make 명령어로 MAKEFILE 실행 후 </br>
 ./ircserv 8080(port) 1234(비밀번호) 실행</br>
