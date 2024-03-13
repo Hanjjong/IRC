@@ -59,9 +59,13 @@ struct kevent {
   
 ## 구조
 SERVER Class : 서버 정보(Password, port 등등), DATABASE를 가진다.
+
 DATABASE Class :  생성된 모든 Channel, UserAccount 를 가진다.
+
 Channel Class : 각 채널 정보 (채널에 가입된 유저의 정보, 채널 모드)를 가진다.
+
 UserAccount Class : 유저 개인 정보, 가입된 채널 리스트를 가진다.
+
 Command Class : 각 명령어들의 인터페이스 역할을 하며, 클라이언트에서 전송된 명령어를 서버에서 파싱한 후 Command class를 상속 받은 각 명령어들을 실행한다.
 
 ## 실행 방법
