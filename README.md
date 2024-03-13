@@ -29,7 +29,7 @@ int kevent (
 );
 
 ```
-kevent()에서 중심이 되는 데이터가 struct kevent입니다.
+- kevent()에서 중심이 되는 데이터가 struct kevent입니다.
 ```cpp
 struct kevent {
     uintptr_t ident; // 이벤트에 대한 식별자, fd 번호
