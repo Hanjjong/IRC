@@ -15,7 +15,7 @@ IRC란 internet Relay chat의 약자로 소켓 통신을 활용한 실시간 채
 여러 스레드를 만들지 않고 단일 스레드로 멀티 스레드와 유사한 효과를 낼수 있도록, 클라이언트의 요청을 Non-blocking 으로 받아들여 여러개의 I/O 작업을 단일스레드로 처리 되게끔 하는 것이 멀티 플렉싱이다.
 
 ## Kqueue()
-Mac Os에서 동작하는 함수로 운영체제에 따라 poll(), epoll(), select() 등 이 존재한다.
+Mac Os에서 동작하는 함수로 운영체제에 따라 poll(), epoll(), select() 등 동일한 기능을 하는 함수들이 존재한다. 각각의 함수들은 동작방식이나 구현은 다르게 되어있다.
 
 kqueue는 커널에 할당된 폴링 공간(kernel event queue - kqueue)에 모니터링할 이벤트를 등록하고, 발생한 이벤트를 return 받아 Multiple I/O Event를 처리할 수 있도록 도와줍니다.
 
